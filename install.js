@@ -9,7 +9,7 @@ if (selected) {
   const buildNumber = `${selected[1]}.${selected[2]}`;
   const commit = selected[3];
   const repository = "https://github.com/qalandarov/halal-stocks-builds";
-  const manifest = `${repository}/releases/download/${tag}/manifest.plist`;
+  const manifest = `https://qalandarov.github.io/halal-stocks-builds/manifests/${tag}.xml`;
   document.getElementById("number").textContent = `Build ${buildNumber}`;
   document.getElementById("commit").textContent = commit;
   document.getElementById("install").href =
